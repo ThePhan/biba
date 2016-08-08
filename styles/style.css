@@ -13,25 +13,27 @@ a {
   color: #b4d7a8;
   text-decoration: none;
 }
-
+h4{
+  color: #f7903b;
+  font-weight: bold;
+}
 
 /* --------------------------------
 
 Modules - reusable parts of our design
 
 -------------------------------- */
-.cd-container {
+/*.cd-container {
   width: 90%;
   font-size: 17px;
   max-width: 768px;
   margin: 0 auto;
 }
 .cd-container::after {
-  /* clearfix */
   content: '';
-  /*display: table;*/
+  display: table;
   clear: both;
-}
+}*/
 
 
 /* --------------------------------
@@ -142,7 +144,7 @@ Main components
 .bottom_p{
   font-size: 9px;
   text-align: center;
-  padding-top: 15px;
+  padding: 15px 20px 0px 0px;
 
 }
 .content_2{
@@ -158,6 +160,54 @@ Main components
 .input-group-lg>.form-control{
   border-radius: 0px;
 }
-.full_content_2{  
+.full_content_2{
   background-image: url("../img/57334bfd-bgimage3.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.full_content_3{
+  background-image: url("../img/e825b761-orangebg-pattern.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+.full_content_4{
+  background-color: rgba(255,255,255,0.61);
+  /*opacity: 0,5px; */
+  background-image: url("../img/57334bfd-bgimage3 (1).jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.content_3_p1{
+  padding: 140px 0px 0px 50px;
+  font-size: 26px;
+  color: #FFFFFF;
+}
+.content_3_p2{
+  padding: 80px 170px 60px 0px;
+  color: #FFFFFF;
+  font-size: 15px;
+}
+.content_4_1{
+  padding: 40px 0px 30px 0px;
+  text-align: center;
+}
+.content_4_2{
+  padding: 90px 120px 30px 0px;
+}
+.content_4p1{
+  font-size: 26px;
+}
+.full_content_5{
+  background-image: url("../img/57334bfd-bgimage3 (1).jpg");
+  padding: 90px 0px 120px 0px;
+  text-align: center;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.content_5{
+  padding: 20px 30px 0px 30px;
+  font-size: 16px;
 }
