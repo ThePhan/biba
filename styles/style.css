@@ -1,0 +1,163 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: #3d3536;
+  background-color: white;
+}
+
+body, html {
+  /* important */
+  height: 100%;
+}
+
+a {
+  color: #b4d7a8;
+  text-decoration: none;
+}
+
+
+/* --------------------------------
+
+Modules - reusable parts of our design
+
+-------------------------------- */
+.cd-container {
+  width: 90%;
+  font-size: 17px;
+  max-width: 768px;
+  margin: 0 auto;
+}
+.cd-container::after {
+  /* clearfix */
+  content: '';
+  /*display: table;*/
+  clear: both;
+}
+
+
+/* --------------------------------
+
+Main components
+
+-------------------------------- */
+
+
+.cd-main-content {
+  /* you need to assign a min-height to the main content so that the children can inherit it*/
+  height: 50%;
+  position: relative;
+  z-index: 1;
+}
+
+.cd-fixed-bg {
+  position: relative;
+  min-height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 1;
+}
+
+.cd-fixed-bg.cd-bg-1 {
+  background-image: url("../img/faa27bde-biba-photo-sm-2.jpg");
+}
+
+.cd-fixed-bg.cd-bg-2 {
+  background-image: url("../img/bd2d4ad5-bgimage1.jpg");
+}
+.cd-fixed-bg.cd-bg-3 {
+  background-image: url("../img/fad61840-double-wide-slide.jpg");
+}
+.cd-fixed-bg.cd-bg-4 {
+  background-image: url("../img/d7875127-bgimage2.jpg");
+}
+@media only screen and (min-width: 768px) {
+  .cd-fixed-bg h1, .cd-fixed-bg h2 {
+    font-size: 36px;
+  }
+}
+@media only screen and (min-width: 1170px) {
+  .cd-fixed-bg {
+    background-attachment: fixed;
+  }
+  .cd-fixed-bg h1, .cd-fixed-bg h2 {
+    font-size: 48px;
+    font-weight: 300;
+  }
+}
+
+/*.cd-scrolling-bg {
+  position: relative;
+  min-height: 100%;
+  padding: 0;
+  line-height: 1.6;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+.cd-scrolling-bg.cd-color-1 {
+  background-color: #3d3536;
+  color: #a6989a;
+}
+.cd-scrolling-bg.cd-color-2 {
+  background-color: #184878;
+  color: #ffffff !important;
+}*/
+.cd-scrolling-bg.cd-color-3 {
+  background-color: #b4d7a8;
+  color: white;
+}
+@media only screen and (min-width: 768px) {
+  .cd-scrolling-bg {
+    padding: 8em 0;
+    font-size: 20px;
+    font-size: 1.25rem;
+    line-height: 2;
+    font-weight: 300;
+  }
+}
+/* ---------------------------------------custom*/
+.topImg{
+  height: 75px;
+  text-align: center;
+  padding-top: 10px;
+}
+.content-h2-1{
+  color: #f7903b;
+  font-weight: normal;
+}
+.content_1_right{
+  background-color: #13395f;
+  padding: 50px 3px 20px 30px;
+}
+.full_content_1{
+  background-color: #184878;
+  font-size: 17px;
+  color: #FFFFFF;
+}
+.content_1_right_p{
+  text-align: center;
+}
+.content_1_left{
+  padding-right: 60px;
+}
+.bottom_p{
+  font-size: 9px;
+  text-align: center;
+  padding-top: 15px;
+
+}
+.content_2{
+  margin: auto;
+  padding-top: 40px;
+  text-align: center;
+}
+.txt_height {
+    margin-top: 25px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.input-group-lg>.form-control{
+  border-radius: 0px;
+}
+.full_content_2{  
+  background-image: url("../img/57334bfd-bgimage3.jpg");
+}
