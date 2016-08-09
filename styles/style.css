@@ -89,11 +89,21 @@ Main components
     .cd-fixed-bg {
         background-attachment: fixed;
     }
+    body {
+        font-size: 20px;
+    }
     .cd-fixed-bg h1, .cd-fixed-bg h2 {
         font-size: 48px;
         font-weight: 300;
     }
+    .content_6_2 {
+        padding: 20px 0px 10px 0px !important;
+    }
+    .content_6_img {
+        padding: 20px 0px 20px 0px !important;
+    }
 }
+
 /*.cd-scrolling-bg {
   position: relative;
   min-height: 100%;
@@ -111,7 +121,6 @@ Main components
   color: #ffffff !important;
 }*/
 
-
 @media only screen and (min-width: 768px) {
     .cd-scrolling-bg {
         padding: 8em 0;
@@ -119,6 +128,9 @@ Main components
         font-size: 20px;
         line-height: 2;
         font-weight: 300;
+    }
+    .content_6_2 {
+        padding: 40px 0px 20px 0px;
     }
 }
 
@@ -168,8 +180,8 @@ Main components
     border-radius: 0px;
     height: 52px;
 }
-#full_content_4_opacity{
-  background-color: rgba(255,255,255,0.61);
+#full_content_4_opacity {
+    background-color: rgba(255, 255, 255, 0.61);
 }
 .full_content_2 {
     background-image: url("../img/57334bfd-bgimage3.jpg");
@@ -214,7 +226,7 @@ Main components
 }
 .content_4_1 {
     padding: 40px 0px 30px 0px;
-    text-align: center;
+    text-align: -webkit-center;
 }
 .content_4_2 {
     padding: 90px 0px 30px 0px;
@@ -228,9 +240,9 @@ Main components
     background-repeat: no-repeat;
     background-size: cover;
 }
-.content_5_1{
-  padding: 90px 0px 120px 0px;
-  text-align: -webkit-center;
+.content_5_1 {
+    padding: 90px 0px 120px 0px;
+    text-align: -webkit-center;
 }
 .full_content_2_opacity {
     background: rgba(255, 255, 255, 0.58);
@@ -255,7 +267,7 @@ Main components
     font-weight: normal;
 }
 .content_6_2p2 {
-    padding: 7px 210px 0px 0px;
+    padding-top: 7px;
     font-size: 16px;
 }
 .content_7_1 {
@@ -304,13 +316,12 @@ Main components
     text-align: center;
     padding: 20px 0px;
 }
-.full_content_5_opacity{
-
+.full_content_5_opacity {
     background-color: rgba(255, 255, 255, 0.811765);
 }
-.content_1_a{
-  background-color: rgba(247,144,59,1);
+.content_1_a {
+    background-color: rgba(247, 144, 59, 1);
 }
-.input-group-lg>.input-group-addon{
-  border-radius: 0px;
+.input-group-lg>.input-group-addon {
+    border-radius: 0px;
 }
