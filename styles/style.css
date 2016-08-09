@@ -8,7 +8,7 @@
         height: 100%;
     }
     a {
-        color: #FFFFFF;
+        color: #FFFFFF !important;
         text-decoration: none;
     }
     a:hover {
@@ -330,7 +330,7 @@ Main components
         position: absolute;
         z-index: 21;
     }
-    .content_2_img {
+    /*.content_2_img {
         position: absolute;
         z-index: 14;
-    }
+    }*/
