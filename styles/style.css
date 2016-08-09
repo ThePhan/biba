@@ -66,12 +66,12 @@ Main components
     .cd-fixed-bg.cd-bg-4 {
         background-image: url("../img/d7875127-bgimage2.jpg");
     }
-    @media only screen and (min-width: 768px) {
+    @media (min-width: 768px) {
         .cd-fixed-bg h1, .cd-fixed-bg h2 {
             font-size: 36px;
         }
     }
-    @media only screen and (min-width: 1170px) {
+    @media (min-width: 1170px) {
         .cd-fixed-bg {
             background-attachment: fixed;
         }
@@ -96,6 +96,9 @@ Main components
         }
         .content_6_img {
             padding: 20px 0px 20px 0px !important;
+        }
+        .bbu1{
+          float: left;
         }
     }
     /*.cd-scrolling-bg {
@@ -264,7 +267,7 @@ Main components
         font-size: 16px;
     }
     .content_7_1 {
-        text-align: center;
+        text-align:-webkit-center;
         padding: 90px 0px 50px 0px;
     }
     .content_7_2 {
@@ -281,6 +284,7 @@ Main components
         margin: 5px;
         width: 200px;
         height: 70px;
+        float: right;
     }
     .bbu1:hover {
         background-image: url("../img/button_download-on-app-store.png");
