@@ -1,4 +1,4 @@
-routerApp.controller('homeController',  function($scope, $http, $state, toastr){
+routerApp.controller('homeController',  function(DataService, $scope, $http, toastr){
 
   $scope.signUp = function(){
     var a = 9;
@@ -17,4 +17,16 @@ routerApp.controller('homeController',  function($scope, $http, $state, toastr){
 
     }
   };
+  $scope.result = [];
+  $scope.result = DataService.getData();
+  // console.log( DataService.getData());
+  console.log($scope.result);
+
+
+  // $http.get("metadata.json").success(function(response){
+  //   $scope.result = response;
+  // }).error(function(error){
+  //   console.log(error);
+  // });
+
 });

@@ -20,17 +20,17 @@
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 content_1_right">
                     <p class="content_1_right_p"> Sign up and stay up to date with Biba App updates,
                         <br />case studies and community engagement reports.</p>
-                        <form name="myForm" novalidate>
-                    <div class="input-group input-group-lg txt_height" >
-                      <!-- <span style="color:red" ng-show="myForm.email.$dirty && myForm.email.$invalid">
+                    <form name="myForm" novalidate>
+                        <div class="input-group input-group-lg txt_height">
+                            <!-- <span style="color:red" ng-show="myForm.email.$dirty && myForm.email.$invalid">
                           <span ng-show="myForm.email.$error.required">Email is required.</span>
                           <span ng-show="myForm.email.$error.email">Invalid email address.</span>
                       </span> -->
-                        <input type="email" name="email" class="form-control" placeholder="Enter email..." ng-model="email" required />
-                        <span class="input-group-addon content_1_a" ng-click="signUp()"><b>Sign Up</b></span>
+                            <input type="email" name="email" class="form-control" placeholder="Enter email..." ng-model="email" required />
+                            <span class="input-group-addon content_1_a" ng-click="signUp()"><b>Sign Up</b></span>
 
-                    </div>
-                  </form>
+                        </div>
+                    </form>
                     <p class="bottom_p"> By entering your email and signing up, you are agreeing to receive Biba Smart Playground newsletters.Why We're Taking the Next Step </p>
                 </div>
 
@@ -41,11 +41,11 @@
     <div class="full_content_2">
         <div class="full_content_2_opacity">
             <div class="container">
-              <div class="row ">
-                <p id="content_2_p">
-                  Curious? See Biba play in action!
-                </p>
-              </div>
+                <div class="row ">
+                    <p id="content_2_p">
+                        Curious? See Biba play in action!
+                    </p>
+                </div>
                 <div class="row content_2">
 
                     <iframe class="content_2_video" src="https://player.vimeo.com/video/140392219" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
@@ -99,8 +99,8 @@
         <div id="full_content_4_opacity">
 
             <div class="container">
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 content_4_1 shake">
-                    <img src="../../img/c8bef253-playground_09d09i09d09i000000.png" class="img-responsive box-center"  width="337" height="342" alt="error image" />
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 content_4_1">
+                    <img src="../../img/c8bef253-playground_09d09i09d09i000000.png" class="img-responsive box-center" width="337" height="342" alt="error image" />
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 content_4_2">
                     <p class="content_4p1">Privacy is our top priority</p>
@@ -120,25 +120,12 @@
         <div class="full_content_5_opacity">
             <div class="container content_5_1">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                        <img src="../../img/4a2da249-feature1_069069069069000000.png" class="img-responsive  shake-slow" width="225" height="225" alt="error image" />
-                        <h4>NO DEVICE DANGER</h4>
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" ng-repeat="data in result">
+
+                        <img ng-src={{data.image}} class="img-responsive" width="225" height="225" alt="error image" />
+                        <h4>{{ data1.title }}</h4>
                         <p class="content_5">
-                            Parents don’t need to worry about their shiny new smartphone, thanks to Biba’s “refereed” play mode. The device never leaves the caregiver’s hands and lets parents be an active part of the fun.
-                        </p>
-                    </div>
-                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 ">
-                        <img src="../../img/85105136-feature2_069069069069000000.png" class="shake-vertical img-responsive" width="225" height="225" alt="error image" />
-                        <h4>INCLUSIVE PLAY</h4>
-                        <p class="content_5">
-                            Biba games are designed so that every child can easily join in the fun, regardless of any possible limitations on their mobility. That’s the way it should be… because Biba games are for everyone!
-                        </p>
-                    </div>
-                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 ">
-                        <img src="../../img/d06f0082-feature3_069069069069000000.png" class="shake-chunk img-responsive" width="225" height="225" alt="error image" />
-                        <h4>GAMES ARE ALWAYS FREE</h4>
-                        <p class="content_5">
-                            Mom and Dad don’t need to worry about being nickel-and-dimed for every new game. Biba games are always free and have been certified as fully family friendly by Google Play!
+                            {{ data.content }}
                         </p>
                     </div>
                 </div>
@@ -154,7 +141,7 @@
 
     <!--  -->
     <div class="full_content_6">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-md-7 col-lg-7 content_6_img">
                     <span class=""><img src="../../img/066a91dd-iphone-screen_0nz0co0nz0co000000.png" class="img-responsive" width="863" height="456" alt="Error image"/></span>
@@ -217,8 +204,7 @@
         <div class="container">
             <div class="row content_8_1">
                 <p>
-                    If you want to try the games with your own family, feel free
-                    to grab your smartphone and download them today!
+                    If you want to try the games with your own family, feel free to grab your smartphone and download them today!
                 </p>
             </div>
             <div class="row content_8_2">
