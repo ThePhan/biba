@@ -1,7 +1,7 @@
 routerApp.controller('homeController',  function(DataService, $scope, $http, toastr){
 
   $scope.signUp = function(){
-    var timeToastr = 20000;
+    var timeToastr = 2000;
     if ($scope.myForm.email.$error.required) {
 
       toastr.warning('Please input your email.', 'Warning', {timeOut: timeToastr});
@@ -17,18 +17,28 @@ routerApp.controller('homeController',  function(DataService, $scope, $http, toa
     }
   };
 
-// function goresult(callback){
-//       // DataService.getData();
-//       callback();
-//   }
-//
-// $scope.result = goresult(DataService.getData());
-// console.log($scope.result);
+/* function callback */
 
-  $http.get("metadata.json").success(function(response){
-    $scope.result = response;
-  }).error(function(error){
-    console.log(error);
-  });
+  // DataService.apiGet("metadata.json",function(response){
+  //   $scope.result = response;
+  // },function(error){
+  //   console.log(error);
+  // }
+  // );
+
+// Not function callback
+DataService.getData().success(function(response){
+  $scope.result = response;
+}).error(function(error){
+  console.log(error);
+});
+
+
+  // $http.get("metadata.json").success(function(response){
+  //   $scope.result = response;
+  // }).error(function(error){
+  //   console.log(error);
+  // });
+
 
 });

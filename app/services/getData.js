@@ -1,11 +1,19 @@
 routerApp.service('DataService', function($rootScope, $http) {
-  var newData = [];
+  var url = "metadata.json";
 
+// no function callback
   this.getData = function(){
-    $http.get("metadata.json").success(function(response){
-      newData = response;
-      // console.log(newData);
-    });
-    return newData;
+    return $http.get(url);
   }
+
+
+/* Use function callback*/
+
+//   var apiGet = function(url,callbackSuccess,callbackError){
+//   $http.get(url).success(function(res){
+//       callbackSuccess(res);
+//   }).error(function(err){
+//       callbackError(err);
+//   })
+// };
 });
